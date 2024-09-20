@@ -1,0 +1,146 @@
+:root {
+    --primary-red: hsl(14, 86%, 42%);
+    --primary-green: hsl(159, 69%, 38%);
+    --rose-50: hsl(20, 50%, 98%);
+    --rose-100: hsl(13, 31%, 94%);
+    --rose-300: hsl(14, 25%, 72%);
+    --rose-400: hsl(7, 20%, 60%);
+    --rose-500: hsl(12, 20%, 44%);
+    --rose-900: hsl(14, 65%, 9%);
+}
+
+body {
+    font-family: "Red Hat Text", sans-serif !important;
+    font-size: 14px;
+    color: var(--rose-900) !important;
+}
+
+body,
+.carbon-neutral,
+.bg-rose100 {
+    background-color: var(--rose-100);
+}
+.name-of-product{
+    font-size: 16px !important;
+}
+h4,
+h5,
+h6,
+.font-weight-600 {
+    font-weight: 600 !important;
+}
+
+h1,
+h2,
+h3,
+.font-weight-700 {
+    font-weight: 700 !important;
+}
+
+.text-red {
+    color: var(--primary-red);
+}
+
+.text-dark-muted {
+    color: var(--rose-400) !important;
+}
+
+.text-light-muted {
+    color: var(--rose-300) !important;
+}
+
+.text-light,
+.selected div.btn-custom {
+    color: var(--rose-50) !important;
+}
+
+.bg-red,
+.selected div.btn-custom {
+    background-color: var(--primary-red) !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cart {
+    height: 100%;
+    background-color: var(--rose-50);
+}
+
+.card-btn {
+    height: 50px !important;
+    margin-top: -25px !important;
+}
+
+.cart-item-thumbnail-img{
+    /* width: 150px;
+    height: 150px; */
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.selected.confirm img.card-img-top {
+    border: 2px solid var(--primary-red);
+}
+
+.btn-custom {
+    border: 1px solid var(--primary-red);
+    background-color: var(--rose-50);
+    cursor: pointer;
+}
+
+.btn-custom>div.beforclick>a.add-to-cart>span {
+    color: var(--rose-900);
+    opacity: 1;
+}
+
+.btn-custom:hover div.beforclick>a.add-to-cart>span {
+    color: var(--primary-red);
+}
+
+.span-svg {
+    line-height: 0;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+.span-svg:hover {
+    background-color: var(--rose-50);
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+}
+
+.span-svg:hover .svg-path {
+    fill: var(--primary-red);
+}
+
+.span-svg.remove {
+    border: 1px solid var(--rose-300);
+}
+
+.span-svg.remove:hover {
+    border-color: var(--rose-900);
+}
+
+.span-svg.remove:hover .svg-path {
+    fill: var(--rose-900);
+}
+
+#order-confirmed {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
