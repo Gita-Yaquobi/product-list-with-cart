@@ -1,18 +1,5 @@
 const $ = document;
-getData("http://localhost/data.json", updateCardsCon);
-
-
-function getData(url, callback) {
-
-  fetch(url)
-    .then((response) => response.json())
-    .then(function (res) {
-
-      callback(res);
-
-    });
-
-}
+updateCardsCon(products);
 
 function updateImageSources() {
 
